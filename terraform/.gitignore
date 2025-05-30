@@ -1,0 +1,46 @@
+# Evitar archivos de Terraform que se regeneran automáticamente
+.terraform/
+.terraform/providers/registry.terraform.io/hashicorp/aws/5.88.0/linux_amd64/terraform-provider-aws_v5.88.0_x5
+.terraform.lock.hcl
+
+6a62f3bd2a55e79eb3c966e959af4774f2825a22
+
+# Evitar archivos de estado de Terraform (contienen datos sensibles)
+terraform.tfstate
+terraform.tfstate.1740419745.backup
+*.tfstate
+*.tfstate.*
+
+# Evitar archivos de salida y logs innecesarios
+crash.log
+*.log
+
+# Evitar claves privadas y credenciales (¡nunca subas credenciales!)
+*.pem
+*.key
+*.crt
+*.pfx
+*.cer
+
+# Evitar archivos ZIP de lambdas o scripts temporales
+*.zip
+*.tar.gz
+
+# Evitar archivos de configuración de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Evitar dependencias de Python si usas scripts en Terraform
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+
+# Evitar archivos de VS Code o editores
+.vscode/
+.idea/
+*.swp
+
+
